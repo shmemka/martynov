@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Владислав Мартынов · Репетитор английского языка</title>
-<meta name="description" content="Владислав Мартынов, репетитор английского языка. 96 баллов ЕГЭ, 8 дипломов олимпиад РСОШ, 3+ года преподавания.">
+<meta name="description" content="Владислав Мартынов, репетитор английского языка. 96 баллов ЕГЭ, дважды победитель регионального этапа ВСОШ, 8 дипломов олимпиад РСОШ, 3+ года преподавания.">
 <meta property="og:title" content="Владислав Мартынов · Репетитор английского">
 <meta property="og:description" content="Подготовка к ЕГЭ, ОГЭ и олимпиадам. 96 баллов ЕГЭ, дважды победитель «Высшей пробы». Telegram: @maartynovlaad">
 <meta property="og:image" content="assets/vlad.jpg">
@@ -212,7 +212,10 @@ footer{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;paddin
 }
 
 /* ---------- stats ---------- */
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.stats{display:grid;grid-template-columns:repeat(6,1fr);gap:20px}
+.stats .card{grid-column:span 2}
+.stats .card.w3{grid-column:span 3}
+.stats .card.hl{background:linear-gradient(160deg,rgba(191,224,184,.26),rgba(255,255,255,.05) 60%);border-color:rgba(191,224,184,.38)}
 .stats .card{min-height:230px;display:flex;flex-direction:column;justify-content:space-between}
 .stats .n{font-size:clamp(64px,7vw,104px);font-weight:500;line-height:.9;letter-spacing:-.05em;color:var(--ice);font-variant-numeric:tabular-nums}
 .stats .n small{font-size:.4em;font-weight:300;color:var(--muted);letter-spacing:0;margin-left:4px}
@@ -236,6 +239,8 @@ footer{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;paddin
 .note a{border-bottom:1px solid var(--line)}
 @media (max-width:960px){
   .stats{grid-template-columns:1fr 1fr}
+  .stats .card,.stats .card.w3{grid-column:auto}
+  .stats .card.hl{grid-column:1/-1}
   .stats .card{min-height:190px}
   .dip{grid-template-columns:30px 1fr;row-gap:10px}
   .dip .pill,.dip .c{grid-column:2;justify-self:start;text-align:left}
@@ -395,6 +400,14 @@ footer{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;paddin
   .bands span{font-size:15px}
 }
 
+.vsosh{margin-top:30px;display:grid;grid-template-columns:auto 1fr auto;gap:22px;align-items:center;padding:26px 28px;border-radius:24px;background:linear-gradient(120deg,rgba(191,224,184,.28),rgba(143,196,138,.08) 55%,rgba(255,255,255,.04));border:1px solid rgba(191,224,184,.4);position:relative;overflow:hidden}
+.vsosh::after{content:"";position:absolute;width:260px;height:260px;right:-60px;top:-110px;border-radius:50%;background:radial-gradient(circle,rgba(217,240,210,.3),transparent 65%);animation:breathe 5s ease-in-out infinite;pointer-events:none}
+.vsosh .gi{width:64px;height:64px;border-radius:20px;display:grid;place-items:center;background:var(--ice);color:#16301c}
+.vsosh .gi .lucide{width:30px;height:30px;stroke-width:1.7}
+.vsosh h3{font-size:clamp(18px,1.8vw,22px);font-weight:600;margin-top:6px}
+.vsosh p{color:var(--muted);font-weight:300;margin-top:4px}
+@media (max-width:960px){.vsosh{grid-template-columns:1fr;padding:22px}.vsosh .pill{justify-self:start}}
+
 @media print{
   @page{size:A4;margin:10mm}
   .bg,.grain,.cursor,.progress,nav,.fab,.marquee,footer,.hero,.toast,.lightbox{display:none!important}
@@ -434,7 +447,7 @@ footer{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;paddin
           <div class="role">Репетитор <b>английского</b></div>
           <div class="cv">(CV)</div>
         </div>
-        <p class="hero-lead rv" style="--d:.9s">96 баллов ЕГЭ, дважды победитель «Высшей пробы» и 3+ года преподавания. Готовлю к ЕГЭ, ОГЭ и олимпиадам, помогаю заговорить свободно.</p>
+        <p class="hero-lead rv" style="--d:.9s">96 баллов ЕГЭ, два года подряд победитель регионального этапа ВСОШ, дважды победитель «Высшей пробы» и 3+ года преподавания. Готовлю к ЕГЭ, ОГЭ и олимпиадам, помогаю заговорить свободно.</p>
         <div class="btns rv" style="--d:1.05s">
           <a class="btn btn-p magnetic" href="#test">Проверить уровень <svg aria-hidden="true" class="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg></a>
           <a class="btn btn-g magnetic" href="https://t.me/maartynovlaad" target="_blank" rel="noopener"><svg aria-hidden="true" class="lucide lucide-send" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z" /><path d="m21.854 2.147-10.94 10.939" /></svg> Написать в Telegram</a>
@@ -454,7 +467,7 @@ footer{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;paddin
 
 <div class="marquee" aria-hidden="true">
   <div class="track">
-    <span>ЕГЭ · 96 баллов</span><span>Высшая проба</span><span>Подготовка к ОГЭ</span><span>Олимпиады РСОШ</span><span>Speakout</span><span>Destination</span><span>Close-up</span><span>Разговорный английский</span>
+    <span>ЕГЭ · 96 баллов</span><span>ВСОШ · победитель региона</span><span>Высшая проба</span><span>Подготовка к ОГЭ</span><span>Олимпиады РСОШ</span><span>Speakout</span><span>Destination</span><span>Close-up</span><span>Разговорный английский</span>
     <span>ЕГЭ · 96 баллов</span><span>Высшая проба</span><span>Подготовка к ОГЭ</span><span>Олимпиады РСОШ</span><span>Speakout</span><span>Destination</span><span>Close-up</span><span>Разговорный английский</span>
   </div>
 </div>
@@ -489,7 +502,8 @@ footer{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;paddin
       <div class="card rv"><div class="n"><span data-count="96">0</span><small>/100</small></div><p>баллов ЕГЭ<br>по английскому языку</p></div>
       <div class="card rv" style="--d:.08s"><div class="n"><span data-count="3">0</span><small>+</small></div><p>года преподавания<br>английского</p></div>
       <div class="card rv" style="--d:.16s"><div class="n"><span data-count="8">0</span></div><p>дипломов олимпиад<br>из перечня РСОШ</p></div>
-      <div class="card rv" style="--d:.24s"><div class="n"><span data-count="2">0</span><small>×</small></div><p>диплом I степени<br>«Высшей пробы»</p></div>
+      <div class="card w3 rv" style="--d:.24s"><div class="n"><span data-count="2">0</span><small>×</small></div><p>диплом I степени<br>«Высшей пробы»</p></div>
+      <div class="card w3 hl rv" style="--d:.32s"><div class="n"><span data-count="2">0</span><small style="margin-left:12px">года подряд</small></div><p>победитель регионального этапа<br>Всероссийской олимпиады школьников по английскому языку</p></div>
     </div>
   </section>
 
@@ -626,7 +640,7 @@ footer{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;paddin
         <div class="label">02</div>
         <div class="ic"><svg aria-hidden="true" class="lucide lucide-trophy" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M10 14.66V17a1 1 0 0 1-1 1 2 2 0 0 0-2 2v2" /><path d="M14 14.66V17a1 1 0 0 0 1 1 2 2 0 0 1 2 2v2" /><path d="M17.916 10H19.5A2.5 2.5 0 0 0 22 7.5V5a1 1 0 0 0-1-1h-3" /><path d="M4 22h16" /><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z" /><path d="M6.084 10H4.5A2.5 2.5 0 0 1 2 7.5V5a1 1 0 0 1 1-1h3" /></svg></div>
         <h3>Олимпиады</h3>
-        <ul class="dots"><li>Перечневые олимпиады РСОШ</li><li>«Высшая проба» и вузовские олимпиады</li><li>Задания повышенной сложности</li><li>Стратегия на олимпиаде</li></ul>
+        <ul class="dots"><li>ВСОШ по английскому языку</li><li>Перечневые олимпиады РСОШ</li><li>«Высшая проба» и вузовские олимпиады</li><li>Задания повышенной сложности</li><li>Стратегия на олимпиаде</li></ul>
       </div>
       <div class="card comp rv" style="--d:.2s">
         <div class="label">03</div>
@@ -723,6 +737,8 @@ footer{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;paddin
       <div class="num">(09)</div>
       <h2 style="margin-top:40px">Результаты и дипломы</h2>
 
+      <div class="vsosh"><div class="gi"><svg aria-hidden="true" class="lucide lucide-trophy" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M10 14.66V17a1 1 0 0 1-1 1 2 2 0 0 0-2 2v2" /><path d="M14 14.66V17a1 1 0 0 0 1 1 2 2 0 0 1 2 2v2" /><path d="M17.916 10H19.5A2.5 2.5 0 0 0 22 7.5V5a1 1 0 0 0-1-1h-3" /><path d="M4 22h16" /><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z" /><path d="M6.084 10H4.5A2.5 2.5 0 0 1 2 7.5V5a1 1 0 0 1 1-1h3" /></svg></div><div><div class="label">ВСОШ · региональный этап</div><h3>Всероссийская олимпиада школьников по английскому языку</h3><p>Победитель регионального этапа два года подряд</p></div><span class="pill g1">Победитель × 2</span></div>
+
       <div class="yr">2025/26 · 11 класс</div>
       <div class="dip"><span class="ix">00</span><div class="t">ЕГЭ по английскому языку<span>Государственная итоговая аттестация, 2026</span></div><span class="pill g1">96 / 100</span><div class="c">баллов</div></div>
       <div class="dip"><span class="ix">01</span><div class="t">Всероссийская олимпиада школьников «Высшая проба»<span>Иностранный язык · I уровень</span></div><span class="pill g1">Диплом I степени</span><div class="c">414 8358-35112</div></div>
@@ -736,7 +752,7 @@ footer{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;paddin
       <div class="dip"><span class="ix">07</span><div class="t">«Миссия выполнима. Твоё призвание — финансист!»<span>Иностранный язык · III уровень</span></div><span class="pill g2">Диплом II степени</span><div class="c">394 2589-57872</div></div>
       <div class="dip"><span class="ix">08</span><div class="t">Межрегиональные предметные олимпиады КФУ<span>Иностранный язык · II уровень</span></div><span class="pill g3">Диплом III степени</span><div class="c">393 8744-75600</div></div>
 
-      <p class="note">Все олимпиады входят в перечень РСОШ. Дипломы можно проверить по коду подтверждения на <a href="https://diploma.rsr-olymp.ru" target="_blank" rel="noopener">diploma.rsr-olymp.ru</a></p>
+      <p class="note">Олимпиады из списка выше входят в перечень РСОШ. Дипломы можно проверить по коду подтверждения на <a href="https://diploma.rsr-olymp.ru" target="_blank" rel="noopener">diploma.rsr-olymp.ru</a></p>
     </div>
   </section>
 
@@ -960,7 +976,7 @@ var LESSONS = [
   var GOAL_PLAN = {
     "ЕГЭ":{b:"Формат ЕГЭ",t:"Отрабатываем все разделы: аудирование, чтение, грамматику и лексику, письмо и устную часть. Пробные варианты и разбор по критериям оценивания."},
     "ОГЭ":{b:"Формат ОГЭ",t:"Проходим все разделы экзамена, тренируем письменную и устную часть, решаем пробные варианты и разбираем ошибки по критериям."},
-    "Олимпиады":{b:"Олимпиадная подготовка",t:"Задания «Высшей пробы», олимпиад РАНХиГС и СПбГУ прошлых лет: Use of English, чтение, письмо и стратегия решения от победителя этих олимпиад."},
+    "Олимпиады":{b:"Олимпиадная подготовка",t:"Задания ВСОШ, «Высшей пробы», олимпиад РАНХиГС и СПбГУ прошлых лет: Use of English, чтение, письмо и стратегия решения от победителя этих олимпиад."},
     "Разговорный английский":{b:"Свободная речь",t:"Разговорная практика на темах, которые интересны именно тебе, работа с ошибками в речи и расширение активного словаря."},
     "Школьная программа":{b:"Уверенность в школе",t:"Закрываем пробелы школьной программы, разбираем сложные темы и помогаем с текущими заданиями, чтобы оценки росли."},
     "Для себя и путешествий":{b:"Живой английский",t:"Английский для путешествий, фильмов и общения: полезная лексика, разговорная практика и уверенность в речи."}
